@@ -1,0 +1,21 @@
+model:
+  input_size: 784        # 28x28 pixels
+  hidden1_size: 256
+  hidden2_size: 128
+  hidden3_size: 64
+  output_size: 10        # digits 0-9
+
+training:
+  learning_rate: 0.01
+  epochs: 10
+  batch_size: 64
+
+paths:
+  data_dir: "data/"
+  save_model_dir: "models/"
+  log_dir: "logs/"
+
+experiment:
+  name: "mnist_numpy_run1"
+  save_every: 2
+  log_every: 100
